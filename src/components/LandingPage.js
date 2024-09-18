@@ -173,6 +173,7 @@ function LandingPage() {
         {/* Main content */}
         <Routes>
           <Route path="/" element={isLoggedIn ? <HomePage /> : <LoginPage onLogin={handleLogin} />} />
+          <Route path="/coding/*" element={isLoggedIn ? <CodingPage /> : <LoginPage onLogin={handleLogin} />} />
           <Route path="home" element={isLoggedIn ? <HomePage /> : <Navigate to="/" />} />
           <Route path="coding" element={isLoggedIn ? <CodingPage /> : <Navigate to="/" />} />
           <Route path="dsa" element={isLoggedIn ? <DsaPage /> : <Navigate to="/" />} />

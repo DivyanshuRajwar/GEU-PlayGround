@@ -1,6 +1,28 @@
 import React from "react";
 import group1 from "./Assests/group1.png";
+import { useNavigate } from "react-router-dom";
 function HomePage() {
+    const navigate = useNavigate();
+  function sideBarHandler(index){
+    if(index === 0){
+      navigate("/coding")
+     }
+     else if(index === 1){
+       navigate("/dsa")
+     }
+     else if(index === 2){
+       navigate("/web")
+     }
+     else if(index === 3){
+       navigate("/theory")
+     }
+     else if(index === 4){
+       navigate("/compiler")
+     }
+     else if(index === 5){
+       navigate("/contest")
+     }
+  }
   return (
     <div className="width height  centerDiv  rounded-xl flex justify-between">
       {/* main    */}
@@ -21,7 +43,7 @@ function HomePage() {
             className="h-[350px] w-[87%] flex-wrap overflow-x-scroll flex-col m-auto p-1 flex items-center justify-center z-10 gap-5 scrollbar-hidden"
           >
             {data.map((d, index) => (
-              <div key={index} className="glass-card p-4 relative">
+              <div key={index} className="glass-card p-4 relative" onClick={() => sideBarHandler(index)}>
                 <p className="text-xl text-blue-text  font-bold  absolute top-5 ">{d.Name}</p>
                 <ul className="mt-4 list-disc pl-5 text-black">
                   {d.Data.map((item, i) => (

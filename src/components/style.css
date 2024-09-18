@@ -80,6 +80,12 @@ body {
 .centerDiv{
   background-color: rgba(255, 255, 255, 0.47);
 }
+.transparent-card{
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 8px 32px rgba(31, 38, 135, 0.37);
+}
 .glass-card {
   width: 350px;
   height: 250px; /* Adjusted height for better visibility */
@@ -109,4 +115,8 @@ body {
 .scrollbar-hidden {
   -ms-overflow-style: none; 
   scrollbar-width: none; 
+}
+.active-Side-Bar{
+  background: #5062ed;
+  color: white;
 }

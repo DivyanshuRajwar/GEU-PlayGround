@@ -1,17 +1,15 @@
 import React from 'react'
+import DocumentaionPage from './DocumentaionPage';
 
 function CodingDocumentation() {
     const language = localStorage.getItem('preferredLanguage');
   return (
-    <div>
+    <div className='width height overflow-x-auto'>
       {
         language ==='Java' ?(
-            <div>Welcome to java</div>
-            
+            <div>Java DocumentaionPage</div>
         ):(
-             <div>
-                welcome to cpp
-             </div>
+          <DocumentaionPage />
         )
     }
     </div>

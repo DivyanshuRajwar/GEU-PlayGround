@@ -1,5 +1,20 @@
 {
   "users": [
-    
+    {
+      "id": "087f",
+      "fullName": "Divyanshu Rajwar",
+      "email": "divyanshurajwar@gmail.com",
+      "password": "123",
+      "university": "GEU",
+      "preferredLanguage": "Java"
+    },
+    {
+      "id": "79c0",
+      "fullName": "Gaurav Negi",
+      "email": "gauravnegi@gmail.com",
+      "password": "123",
+      "university": "GEU",
+      "preferredLanguage": "C++"
+    }
   ]
 }
